@@ -27,6 +27,7 @@
 }
 
 
+
 /*** Spinner ***/
 #spinner {
     opacity: 0;
@@ -158,6 +159,24 @@
         opacity: 1;
     }
 }
+
+.title-header{
+    margin-top: 4%;
+}
+
+/**.form-control label {
+    position: absolute;
+    left:20px;
+    top: 50px;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color:#171818;
+    transition:all 0.is eas;
+
+
+}
+
+
 
 
 /*** Header carousel ***/
@@ -629,3 +648,4 @@
     padding-right: 0;
     border-right: none;
 }
+
