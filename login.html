@@ -3,15 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <title>eduXenius
-        
+    <title>Sign In
     </title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="graphical_assets/bevel.png" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,6 +30,73 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-image: url("img/bg2.jpg");
+        }
+    
+        #login-container {
+            background-color: #fff;
+            width: 30%;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 3%;
+        }
+    
+        h2 {
+            font-size: 24px;
+            color: #333;
+        }
+    
+        form {
+            text-align: left;
+        }
+    
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+    
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    
+        #google-login-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4285F4;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+    
+        p {
+            margin-top: 20px;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -44,51 +110,45 @@
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary"><img src="graphical assets/bevel.png" class="logo"><img src="graphical assets/text.png" style="max-width: 200px;">
-            </h2>
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="courses.html" class="nav-item nav-link">Courses</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu fade-down m-0">
-                        <a href="team.html" class="dropdown-item">Our Team</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
-                    </div>
-                </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
-            </div>
-            <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i class="fa fa-arrow-right ms-3"></i></a>
+   <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+    <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+    <h2 class="m-0 text-primary"><img src="graphical_assets/bevel.png" class="logo"><img src="graphical_assets/text.png" style="max-width: 200px;">
+    </h2>
+    </a>
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <a href="index.html" class="nav-item nav-link">Home</a>
+            <a href="about.html" class="nav-item nav-link">About</a>
+            <a href="courses.html" class="nav-item nav-link">Courses</a>
+            <a href="contact.html" class="nav-item nav-link">Contact</a>
         </div>
-    </nav>
-    <!-- Navbar End -->
-    <div class="login-page">
-        <h2>Sign In</h2>
-        <form action="#">
-            <div class="form-control ">
-                <input type="text" required>
-                <label>Email</label>
-        </div>
-        <div class="form-control ">
-                <input type="password" required>
-                <label>Password</label>
-        </div>
-        
-        <button type="submit">Sign In </button> 
-        
-
-        </form>
+        <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i class="fa fa-arrow-right ms-3"></i></a>
     </div>
+</nav>
+<!-- Navbar End -->
     
+
+    <!--login start-->
+    <div class="title-header">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="section-title bg-white text-center text-primary px-0">Welcome Back</h6>
+            <h1 class="mb-0">Sign In To Your Account</h1>
+        </div>
+    </div>
+    <div id="login-container">
+        <form action="login_backend.php" method="POST">
+            <input type="text" id="email" name="email" placeholder="Email Address" required><br><br>
+            <input type="password" id="password" name="password" placeholder="Password" required><br><br>
+            <button type="submit" id="login-button">Sign In</button>
+        </form>
+        <p><center>Or</center></p>
+        <button id="google-login-button">Sign In with Google</button>
+        <p><center>New user? <a href="registration.html">Register Here</center></a></p>
+    </div>
+    <!--login end-->
 
 
 
