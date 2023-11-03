@@ -104,10 +104,10 @@ button:hover {
 
     <!--input start-->
     <div class="container">
-        <center><h4>Play around with your interested topics and get hand picked courses recommended right for you !</<h4></center>
-            <br><br>
+        <center><h4>Play around with your interested topics and get hand-picked courses recommended right for you!</h4></center>
+        <br><br>
         <form action="/recommend" method="POST">
-            <input type="text" id="keyword" name="keyword" placeholder="Enter your interest">
+            <input type="text" id="interestInput" name="interestInput" placeholder="Enter your interest">
             <button type="submit">Recommend Courses</button>
         </form>
     </div>
@@ -116,9 +116,16 @@ button:hover {
     
 
     <!--recommendations start -->
+    <!---<div class="recommendations">
+        <h4>Recommended Courses:</h4>
+        <ul>
+            {% for course in courses %}
+                <li>{{ course }}</li>
+            {% endfor %}
+        </ul>
+    </div> -->
 
-
-    <!--recommendations start -->
+    <!--recommendations end -->
 
 
 
@@ -272,11 +279,7 @@ button:hover {
     </div>
 </div>
 <!-- Courses End -->
-    
 
-
-   
-        
 
     <!-- Footer Start -->
    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
