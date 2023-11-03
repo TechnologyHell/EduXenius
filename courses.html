@@ -276,6 +276,47 @@
     </div>
     <!-- demanding Courses End -->
 
+    
+
+    <!-- ai Start -->
+    <div class="container-xxl py-5 category">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Courses For You</h6>
+                <h1 class="mb-5">AI Course Recommendation</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ai End -->
+
+    <br><br>
+
+    <!--input start-->
+    <div class="container">
+        <center><h4>Play around with your interested topics and get hand-picked courses recommended right for you!</h4></center>
+        <br><br>
+        <form action="/recommend" method="POST">
+            <input type="text" id="interestInput" name="interestInput" placeholder="Enter your interest">
+            <button type="submit">Recommend Courses</button>
+        </form>
+    </div>
+    <br><br><br>
+    <!--input end-->
+    
+
+    <!--recommendations start -->
+    <!---<div class="recommendations">
+        <h4>Recommended Courses:</h4>
+        <ul>
+            {% for course in courses %}
+                <li>{{ course }}</li>
+            {% endfor %}
+        </ul>
+    </div> -->
+
+    <!--recommendations end -->
+
+
     <!-- Categories Start -->
     <div class="container-xxl py-5 category">
         <div class="container">
