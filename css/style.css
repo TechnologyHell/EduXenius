@@ -119,6 +119,9 @@
     .navbar-light .navbar-nav {
         border-top: 1px solid #EEEEEE;
     }
+    .verifycredential {
+        width: 90%; 
+    }
 }
 
 .navbar-light .navbar-brand,
@@ -647,5 +650,48 @@
     margin-right: 0;
     padding-right: 0;
     border-right: none;
+}
+
+.verifycredential {
+
+    min-width: 70%;
+    max-width: 600px; /* Set a max-width for larger screens */
+    min-height: 60vh; /* Adjusted to min-height for better responsiveness */
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#verificationResult {
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgb(0, 95, 0);
+    font-weight: bold;
+}
+
+#credentialId {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    text-align: center;
+}
+
+#submitVerification {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#submitVerification:hover {
+    background-color: #45a049;
 }
 
